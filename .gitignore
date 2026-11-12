@@ -1,0 +1,58 @@
+# Local working folders (never versioned)
+specs/
+ai-related-docs/
+
+# Editor configuration
+.vscode/
+.idea/
+
+# Secrets and local environment files
+.env
+.env.*
+!.env.example
+**/secrets.yml
+*.pem
+*.key
+
+# Python
+**/.venv/
+**/__pycache__/
+*.py[cod]
+**/*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+coverage.xml
+htmlcov/
+build/
+dist/
+.tox/
+
+# AWS SAM / CloudFormation build output and packaged templates
+.aws-sam/
+**/.aws-sam/
+.build/
+**/.build/
+**/packaged*.yaml
+samconfig.local.toml
+
+# Terraform / Terragrunt (backlog IB-01)
+.terraform/
+**/.terragrunt-cache/
+*.tfstate
+*.tfstate.*
+*.tfplan
+**/tfplan
+*.tfvars
+*.tfvars.json
+crash.log
+crash.*.log
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+# Operating system
+.DS_Store
+Thumbs.db
